@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=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
+    volumes:
+      - ./app:/app
